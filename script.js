@@ -42,7 +42,7 @@ const cart = {
         this.items.push(newObject)
     },
     removeItem(name) {
-        this.items.splice(this.items.indexOf(name), 1)
+        this.items = this.items.filter(element => element.name !== name)
     },
     updateCart() {
         this.items = [];
