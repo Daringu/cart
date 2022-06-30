@@ -78,12 +78,3 @@ const cart = {
 
 const lemone = new Product('lemone', 100)
 const strawberry = new Product('strawberry', 200)
-cart.addItem(strawberry)
-cart.addItem(strawberry, 4)
-cart.decrease(strawberry.name, 4)
-cart.increase(strawberry.name, 98)
-cart.addItem(lemone, 99)
-cart.decrease(lemone.name, 99)
-cart.removeItem(strawberry.name)
-console.log(cart.getTotalPrice());
-console.log(cart.getItems());
